@@ -8,6 +8,6 @@ npm i @thinnakrit/emotion-responsive
 
 ## Documentation
 
-See [Documentation](https://emotion-responsive.vercel.app){:target="_blank" rel="noopener"}
+See [Documentation and Demo](https://emotion-responsive.vercel.app)
 
 
