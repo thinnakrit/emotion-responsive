@@ -62,5 +62,8 @@
     "LICENSE",
     "README.md"
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  }
 }
