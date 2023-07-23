@@ -1,6 +1,6 @@
 {
   "name": "@thinnakrit/emotion-responsive",
-  "version": "1.0.26",
+  "version": "1.0.27",
   "description": "@emotion with responsive",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
