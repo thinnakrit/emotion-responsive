@@ -4,14 +4,6 @@ on:
   release:
     types: [created]
 
-steps:
-  - name: node
-    entrypoint: npm
-    args: ['install']
-  - name: node
-    entrypoint: npm
-    args: ['build']
-
 jobs:
   build:
     runs-on: ubuntu-latest
