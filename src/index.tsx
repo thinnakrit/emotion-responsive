@@ -35,6 +35,7 @@ const Row = styled.div<RowProps>`
   display: flex;
   flex-wrap: wrap;
   gap: ${(props) => props.gap || 0}px;
+  --gap: ${(props) => props.gap || 0}px;
 `
 
 const Col = styled.div<ColProps>`
@@ -42,30 +43,29 @@ const Col = styled.div<ColProps>`
   flex: 0 0 auto;
   width: ${(1 * 100) / 12}%;
 
-  ${(props) => props.xs && `width: ${(props.xs * 100) / 12}%;`}
-
+  ${(props) => props.xs && `width: calc(${(props.xs * 100) / 12}% - var(--gap));`};
   @media (min-width: 640px) {
-    ${(props) => props.sm && `width: ${(props.sm * 100) / 12}%;`}
+    ${(props) => props.sm && `width: calc(${(props.sm * 100) / 12}% - var(--gap));`}
   }
 
   @media (min-width: 768px) {
-    ${(props) => props.md && `width: ${(props.md * 100) / 12}%;`}
+    ${(props) => props.md && `width: calc(${(props.md * 100) / 12}% - var(--gap));`}
   }
 
   @media (min-width: 1024px) {
-    ${(props) => props.lg && `width: ${(props.lg * 100) / 12}%;`}
+    ${(props) => props.lg && `width: calc(${(props.lg * 100) / 12}% - var(--gap));`}
   }
 
   @media (min-width: 1280px) {
-    ${(props) => props.xl && `width: ${(props.xl * 100) / 12}%;`}
+    ${(props) => props.xl && `width: calc(${(props.xl * 100) / 12}% - var(--gap));`}
   }
 
   @media (min-width: 1440px) {
-    ${(props) => props.xxl && `width: ${(props.xxl * 100) / 12}%;`}
+    ${(props) => props.xxl && `width: calc(${(props.xxl * 100) / 12}% - var(--gap));`}
   }
 
   @media (min-width: 1920px) {
-    ${(props) => props.xxxl && `width: ${(props.xxxl * 100) / 12}%;`}
+    ${(props) => props.xxxl && `width: calc(${(props.xxxl * 100) / 12}% - var(--gap));`}
   }
 `
 

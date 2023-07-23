@@ -1,0 +1,146 @@
+import { Meta, ColorPalette, ColorItem, Canvas } from '@storybook/addon-docs'
+import { Container, Row, Col } from '../'
+
+<Meta title='Example/Responsive' />
+
+### Breakpoints @media in css
+
+<table>
+  <tr>
+    <th>Breakpoint</th>
+    <th>media: min-width</th>
+  </tr>
+  <tr>
+    <td>sm</td>
+    <td>640px</td>
+  </tr>
+  <tr>
+    <td>md</td>
+    <td>768px</td>
+  </tr>
+  <tr>
+    <td>lg</td>
+    <td>1024px</td>
+  </tr>
+  <tr>
+    <td>xl</td>
+    <td>1280px</td>
+  </tr>
+  <tr>
+    <td>xxl</td>
+    <td>1440px</td>
+  </tr>
+  <tr>
+    <td>xxxl</td>
+    <td>1920px</td>
+  </tr>
+</table>
+
+### Container Props
+
+<table>
+  <tr>
+    <th>Prop name</th>
+    <th>Type</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>innerWidth</td>
+    <td>number | undefined</td>
+    <td>For set padding left/right</td>
+  </tr>
+  <tr>
+    <td>maxWidth</td>
+    <td>number | undefined</td>
+    <td>For set Container max width</td>
+  </tr>
+</table>
+
+### Row Props
+
+<table>
+  <tr>
+    <th>Prop name</th>
+    <th>Type</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>gap</td>
+    <td>number | undefined</td>
+    <td>For set gap on column</td>
+  </tr>
+</table>
+
+### Col Props
+
+<table>
+  <tr>
+    <th>Prop name</th>
+    <th>Type</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>xs, sm, md, lg, xl, xxl and xxxl</td>
+    <td>number | undefined</td>
+    <td>For set breakpoint</td>
+  </tr>
+</table>
+
+### Exmaple Grid
+
+<Canvas>
+  <Container>
+    <Row>
+      <Col sm={6}>Col-sm-6</Col>
+      <Col sm={6}>Col-sm-6</Col>
+    </Row>
+  </Container>
+</Canvas>
+
+### Row with gap
+
+<Canvas>
+  <Container>
+    <Row gap={12}>
+      <Col sm={6} style={{ background: 'red' }}>
+        Col-sm-6
+      </Col>
+      <Col sm={6} style={{ background: 'red' }}>
+        Col-sm-6
+      </Col>
+      <Col sm={6} style={{ background: 'red' }}>
+        Col-sm-6
+      </Col>
+    </Row>
+  </Container>
+</Canvas>
+
+### Max 12 Cols
+
+<Canvas>
+  <Container>
+    <Row>
+      <Col sm={6}>Col-sm-6</Col>
+      <Col sm={6}>Col-sm-6</Col>
+      <Col sm={6}>Col-sm-6</Col>
+    </Row>
+  </Container>
+</Canvas>
+
+### Responsive
+
+<Canvas>
+  <Container>
+    <Row>
+      <Col xs={12} sm={12} md={4}>
+        Col-xs-12 Col-sm-12 Col-md-4
+      </Col>
+      <Col xs={12} sm={12} md={4}>
+        Col-xs-12 Col-sm-12 Col-md-4
+      </Col>
+      <Col xs={12} sm={12} md={4}>
+        Col-xs-12 Col-sm-12 Col-md-4
+      </Col>
+    </Row>
+  </Container>
+</Canvas>
