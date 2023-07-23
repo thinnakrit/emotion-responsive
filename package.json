@@ -16,7 +16,7 @@
     "test": "jest --config jestconfig.json",
     "prettier": "prettier --write \"{src,tests,example/src}/**/*.{js,ts,jsx,tsx}\"",
     "storybook": "start-storybook -p 6006 -s public",
-    "build-storybook": "storybook build --output public",
+    "build-storybook": "build-storybook -s public",
     "serve-storybook": "serve storybook-static"
   },
   "repository": {
