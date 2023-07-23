@@ -8,4 +8,4 @@ npm i @thinnakrit/emotion-responsive
 
 ## Documentation
 
-See https://github.com/thinnakrit/emotion-responsive
+See https://emotion-responsive.vercel.app
