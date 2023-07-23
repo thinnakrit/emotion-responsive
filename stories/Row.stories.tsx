@@ -1,6 +1,6 @@
 import React from 'react'
 import type { Meta, StoryObj } from '@storybook/react'
-import { Row } from '../'
+import { Row } from '../src'
 
 const meta: Meta<typeof Row> = {
   component: Row,

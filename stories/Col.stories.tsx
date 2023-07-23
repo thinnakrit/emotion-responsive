@@ -1,6 +1,6 @@
 import React from 'react'
 import type { Meta, StoryObj } from '@storybook/react'
-import { Col } from '../'
+import { Col } from '../src'
 
 const meta: Meta<typeof Col> = {
   component: Col,
