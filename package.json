@@ -62,8 +62,5 @@
     "LICENSE",
     "README.md"
   ],
-  "license": "MIT",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/thinnakrit"
-  }
+  "license": "MIT"
 }
